@@ -21,3 +21,12 @@ print('Caminho completo do arquivo:', __file__)  # Retorna o caminho completo do
 print('Nome do arquivo atual:', os.path.basename(__file__))  # Retorna somente o arquivo 'Aula.py'
 print('Pasta do arquivo atual:', os.path.dirname(__file__))  # Retorna o diretorio do arquivo, como na getcwd
 print('Caminho absoluto do arquivo:', os.path.abspath(__file__))  # Retorna o diretorio absoluto do arquivo
+
+print('-'*45)
+
+print('Lista de arquivos no diretorio atual:', os.listdir())  # Lista o diretorio atual. O que tem nesse diretorio
+print('lISTA DE ARQUIVOS NO DIRETORIO C:', os.listdir('C://'))  # Lista o diretorio C://
+
+os.mkdir('Teste')  # Cria uma pasta no diretorio atual, caso queira criar em outro diretorio, especifica-se o mesmo. Além de que não é possivel criar uma pasta de mesmo nome, mesmo em outro diretorio
+# os.mkdir('C://teste') exemplo de criação no disco C
+os.mkdir('Teste//segundo_teste')
