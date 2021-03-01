@@ -27,6 +27,6 @@ print('-'*45)
 print('Lista de arquivos no diretorio atual:', os.listdir())  # Lista o diretorio atual. O que tem nesse diretorio
 print('lISTA DE ARQUIVOS NO DIRETORIO C:', os.listdir('C://'))  # Lista o diretorio C://
 
-os.mkdir('Teste')  # Cria uma pasta no diretorio atual, caso queira criar em outro diretorio, especifica-se o mesmo. Além de que não é possivel criar uma pasta de mesmo nome, mesmo em outro diretorio
+os.mkdir('Teste//Segundo_teste')  # Cria uma pasta no diretorio atual, caso queira criar em outro diretorio, especifica-se o mesmo. Além de que não é possivel criar uma pasta de mesmo nome, mesmo em outro diretorio
 # os.mkdir('C://teste') exemplo de criação no disco C
-os.mkdir('Teste//segundo_teste')
+# Não é uma função recursiva, tem que criar cada diretorio manualmente
