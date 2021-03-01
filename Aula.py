@@ -9,3 +9,8 @@ print(meio_ambiente)
 
 ip_processo = os.getpid()  # Pega o id do processo atual
 print(ip_processo)
+
+caminho_atual = os.getcwd()  # Retorna o caminho do arquivo
+print(caminho_atual)
+
+print(__file__)  # Retorna o arquivo completo do arquivo, com o arquivo 'Aula.py' incluso
