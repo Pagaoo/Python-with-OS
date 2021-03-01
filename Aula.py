@@ -3,3 +3,9 @@ import platform  # Importa o pacote platform
 
 nome = platform.system()  # Pega o nome da plataforma que estamos usando, windows nesse caso.
 print(nome)
+
+meio_ambiente = os.environ['HOMEDRIVE']  # Mostra as especificações do ambiente do OS. Pode usar as keys para pegar informações, pois é um dicionario. Caso não seja o caso, usar somente os.environ
+print(meio_ambiente)
+
+ip_processo = os.getpid()  # Pega o id do processo atual
+print(ip_processo)
