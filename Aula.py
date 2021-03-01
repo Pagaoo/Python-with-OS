@@ -4,13 +4,20 @@ import platform  # Importa o pacote platform
 nome = platform.system()  # Pega o nome da plataforma que estamos usando, windows nesse caso.
 print(nome)
 
+print('-'*45)
+
 meio_ambiente = os.environ['HOMEDRIVE']  # Mostra as especificações do ambiente do OS. Pode usar as keys para pegar informações, pois é um dicionario. Caso não seja o caso, usar somente os.environ
 print(meio_ambiente)
+
+print('-'*45)
 
 ip_processo = os.getpid()  # Pega o id do processo atual
 print(ip_processo)
 
-caminho_atual = os.getcwd()  # Retorna o caminho do arquivo
-print(caminho_atual)
-
-print(__file__)  # Retorna o arquivo completo do arquivo, com o arquivo 'Aula.py' incluso
+print('-'*45)
+ 
+print('Caminho do arquivo:', os.getcwd())  # Retorna o caminho do arquivo
+print('Caminho completo do arquivo:', __file__)  # Retorna o caminho completo do arquivo, com o arquivo 'Aula.py' incluso
+print('Nome do arquivo atual:', os.path.basename(__file__))  # Retorna somente o arquivo 'Aula.py'
+print('Pasta do arquivo atual:', os.path.dirname(__file__))  # Retorna o diretorio do arquivo, como na getcwd
+print('Caminho absoluto do arquivo:', os.path.abspath(__file__))  # Retorna o diretorio absoluto do arquivo
