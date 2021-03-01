@@ -27,6 +27,11 @@ print('-'*45)
 print('Lista de arquivos no diretorio atual:', os.listdir())  # Lista o diretorio atual. O que tem nesse diretorio
 print('lISTA DE ARQUIVOS NO DIRETORIO C:', os.listdir('C://'))  # Lista o diretorio C://
 
-os.mkdir('Teste//Segundo_teste')  # Cria uma pasta no diretorio atual, caso queira criar em outro diretorio, especifica-se o mesmo. Além de que não é possivel criar uma pasta de mesmo nome, mesmo em outro diretorio
+# os.mkdir('Teste//Segundo_teste')  # Cria uma pasta no diretorio atual, caso queira criar em outro diretorio, especifica-se o mesmo. Além de que não é possivel criar uma pasta de mesmo nome, mesmo em outro diretorio
 # os.mkdir('C://teste') exemplo de criação no disco C
 # Não é uma função recursiva, tem que criar cada diretorio manualmente
+
+print('-'*45)
+
+os.rename('Teste//arquivo45.txt', 'Teste//arquivo455.txt')  # Renomeio o arquivo selecionado para aquivo45
+os.rename('Teste//Segundo_teste', 'Teste//Teste_2')  # Também pode ser utilizado para renomear diretorios
