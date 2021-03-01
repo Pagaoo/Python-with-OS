@@ -1,5 +1,6 @@
 import os  # Importa o pacote os
 import platform  # Importa o pacote platform
+import shutil
 
 nome = platform.system()  # Pega o nome da plataforma que estamos usando, windows nesse caso.
 print(nome)
@@ -31,7 +32,10 @@ print('lISTA DE ARQUIVOS NO DIRETORIO C:', os.listdir('C://'))  # Lista o direto
 # os.mkdir('C://teste') exemplo de criação no disco C
 # Não é uma função recursiva, tem que criar cada diretorio manualmente
 
+# os.rename('Teste//arquivo45.txt', 'Teste//arquivo455.txt')  # Renomeio o arquivo selecionado para aquivo45
+# os.rename('Teste//Segundo_teste', 'Teste//Teste_2')  # Também pode ser utilizado para renomear diretorios
+
 print('-'*45)
 
-os.rename('Teste//arquivo45.txt', 'Teste//arquivo455.txt')  # Renomeio o arquivo selecionado para aquivo45
-os.rename('Teste//Segundo_teste', 'Teste//Teste_2')  # Também pode ser utilizado para renomear diretorios
+shutil.copy2('Teste//arquivo455.txt', 'Teste//Teste_2//arquivo_teste.txt')  # Copia o arquivo para outro diretorio, podendo mudar o nome do mesmo.
+# O primeiro parametro é a origem e o segundo o destino do arquivo
