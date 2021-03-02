@@ -1,4 +1,4 @@
-import os  # Importa o pacote os
+import os, os.path  # Importa o pacote os
 import platform  # Importa o pacote platform
 import shutil
 from distutils.dir_util import copy_tree
@@ -49,4 +49,12 @@ print('-'*45)
 
 # shutil.rmtree('Teste')  # Remove todos os arquivos da pasta Teste, incluindo a pasta
 
-os.mkdir('Desafio//desafio_1')
+if not os.path.isdir('Desafio'):
+    os.mkdir('Desafio//desafio_1')
+if not os.path.isdir('Desafio//teste_1'):
+    os.mkdir('Desafio//teste_1')
+
+if not os.path.isfile('Desafio//arquivo.txt'):
+    print('Arquivo não existe')
+else:
+    print('Arquivo Existente')
