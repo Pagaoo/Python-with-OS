@@ -41,10 +41,12 @@ print('-'*45)
 # shutil.copy2('Teste//arquivo455.txt', 'Teste//Teste_2//arquivo_teste.txt')  # Copia o arquivo para outro diretorio, podendo mudar o nome do mesmo.
 # O primeiro parametro é a origem e o segundo o destino do arquivo
 
-copy_tree('Teste', 'Teste3')  # Vai mover o conteudo da pasta teste para a pasta teste3
+# copy_tree('Teste', 'Teste3')  # Vai mover o conteudo da pasta teste para a pasta teste3
 
 # os.remove('Teste//Teste_2//arquivo_teste.txt')  # Vai remover o arquivo, não funciona com pastas, apenas arquivos
 
 # os.removedirs('Teste//Teste_2')  # Remove pastas. Não remove pastas cheias
 
-shutil.rmtree('Teste')  # Remove todos os arquivos da pasta Teste, incluindo a pasta
+# shutil.rmtree('Teste')  # Remove todos os arquivos da pasta Teste, incluindo a pasta
+
+os.mkdir('Desafio//desafio_1')
