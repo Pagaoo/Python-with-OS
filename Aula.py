@@ -58,3 +58,6 @@ if not os.path.isfile('Desafio//arquivo.txt'):
     print('Arquivo não existe')
 else:
     print('Arquivo Existente')
+
+open('Desafio//nome2.txt', 'w+')  # Write, Delata o conteudo e escreve no arquivo. w+ cria o arquivo, caso não exista
+# open('Desafio//nome.txt', 'a')  # Append, Não deleta o conteudo e adiciona mais conteudo. Além de criar o arquivo caso não exista
